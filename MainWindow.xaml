@@ -312,8 +312,10 @@
                 <Label Content="SADECE GRATİS'TE" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#D2D2D2" FontSize="60"/>
             </Border>
             <Border Grid.Row="14" Background="#F7F7F7">
-                <Grid>
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -322,14 +324,50 @@
 
                     <Border Grid.Column="0">
                         <StackPanel>
-                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\beaulis2.png"/>
-                            <Label Height="30"/>
-                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\wetnwild2.png"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\beaulis2.png" Width="170" Cursor="Hand"/>
+                            <Label Height="35"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\wetnwild2.png" Width="170" Cursor="Hand"/>
                         </StackPanel>
                     </Border>
 
                     <Border Grid.Column="1">
+                        <StackPanel>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\benri.png" Width="170" Cursor="Hand"/>
+                            <Label Height="30"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\himalaya.png" Width="170" Cursor="Hand"/>
+                        </StackPanel>
                         
+                    </Border>
+
+                    <Border Grid.Column="2">
+                        <StackPanel>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\beebeauty.png" Width="170" Cursor="Hand"/>
+                            <Label Height="33"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\inecto.png" Width="170" Cursor="Hand"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="3">
+                        <StackPanel>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\eklips.png" Width="170" Cursor="Hand"/>
+                            <Label Height="40"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\makeupobsession.png" Width="170" Cursor="Hand"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="4">
+                        <StackPanel>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\lifein.png" Width="170" Cursor="Hand"/>
+                            <Label Height="40"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\lacurebeaute.png" Width="170" Cursor="Hand"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="5">
+                        <StackPanel>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\thebalm.png" Width="170" Cursor="Hand"/>
+                            <Label Height="30"/>
+                        </StackPanel>
                     </Border>
                 </Grid>
                 
@@ -345,13 +383,13 @@
             </Border>
             <Border Grid.Row="16">
                 <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\sacbakım.png" Width="300"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\sacbakım.png" Width="200"/>
                     <Label Width="30"/>
-                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\makyaj.png" Width="300"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\makyaj.png" Width="200"/>
                     <Label Width="30"/>
-                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\saglikhijyen.png" Width="300"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\saglikhijyen.png" Width="200"/>
                     <Label Width="30"/>
-                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ciltbakim.png" Width="300"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ciltbakim.png" Width="200"/>
 
                 </DockPanel>
             </Border>
