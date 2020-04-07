@@ -1,0 +1,71 @@
+﻿<Application x:Class="gratisWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:gratisWPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--Menu Butonlar-->
+        <Style x:Key="resimmenubutonlar" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Image Name="image"
+                               Source="C:\Users\Bengu\source\repos\Gratis\images\icon\resimmenu.png"
+                               Width="60">
+                        </Image>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="image" Property="Source" Value="C:\Users\Bengu\source\repos\Gratis\images\icon\resimmenu2.png"/>
+                                <Setter TargetName="image" Property="Width" Value="60"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--Menu Butonlar-->
+        <Style x:Key="menubutonlar" TargetType="Button">
+            <Setter Property="Foreground" Value="#FF787878"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Label">
+                        <Label Name="label">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Label>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="label" Property="Foreground" Value="#490E6F"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border"
+                                BorderThickness="0,0,0,1"
+                                BorderBrush="#FFA2A2A2"
+                                Background="{x:Null}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+
+
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#490E6F"/>
+                                <Setter TargetName="border" Property="Background" Value="White"/>
+                                <Setter TargetName="border" Property="BorderThickness" Value="0,0,0,3"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
