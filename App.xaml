@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:gratisWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!--Menu Butonlar-->
+        <!--Menu Butonlar         <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\white.jpg" Opacity="0.5" Width="1000"/>-->
         <Style x:Key="resimmenubutonlar" TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>

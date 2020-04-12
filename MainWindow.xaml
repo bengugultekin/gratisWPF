@@ -20,6 +20,7 @@
                 <RowDefinition Height="300"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="300"/>
+                <RowDefinition Height="600"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -308,10 +309,252 @@
                     <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\sagresim.png" Width="100" HorizontalAlignment="Right"/>
                 </DockPanel>
             </Border>
-            <Border Grid.Row="13" Background="#F7F7F7">
-                <Label Content="SADECE GRATİS'TE" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#D2D2D2" FontSize="60"/>
+
+            <Border Grid.Row="10">
+                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\artisan-soap-feature.jpeg"/>
+            </Border>
+            <Border Grid.Row="10">
+                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\white2.jpg" Opacity="0.5" Width="1000"/>
+            </Border>
+
+            <Border Grid.Row="10">
+                <Border>
+                    
+                    <Border>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="140"/>
+                                <ColumnDefinition Width="500"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="140"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Column="1">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="80"/>
+                                        <RowDefinition Height="150"/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition Height="75"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Border Grid.Row="1">
+                                        <StackPanel>
+                                            <Label/>
+                                            <Label Content="Sağlıklı Yaşam" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Rubik" FontWeight="Bold" FontSize="24"/>
+                                            <Label Content="Kişisel temizliğimize özen göstermemiz gereken bu dönemlerde cildinizi" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Rubik"/>
+                                            <Label Content="bakterilerden arındırmak ve daha sağlıklı bir cilde kavuşmak için Gratis'in seçtiği" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Rubik"/>
+                                            <Label Content="ürünlerle tanışın..." VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Rubik"/>
+
+                                        </StackPanel>
+                                    </Border>
+
+                                    <Border Grid.Row="2">
+                                        <DockPanel HorizontalAlignment="Center">
+                                            
+                                            <Button Cursor="Hand">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="50"/>
+                                                        <Setter Property="Content" Value="Antibakteriyel"/>
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+                                                        
+                                                        <Style.Triggers>
+
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Background" Value="{x:Null}"/>
+                                                            </Trigger>
+                                                            
+                                                            <Trigger Property="IsFocused" Value="true">
+                                                                <Setter Property="Foreground" Value="#A487B7"/>
+                                                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                                                <Setter Property="BorderBrush" Value="#A487B7"/>
+                                                                <Setter Property="Opacity" Value="100"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+
+                                                        
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+
+                                            <Label Width="50"/>
+                                            <Button Cursor="Hand">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="50"/>
+                                                        <Setter Property="Content" Value="Islak Mendil Havlu"/>
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+
+                                                        <Style.Triggers>
+
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Background" Value="{x:Null}"/>
+                                                            </Trigger>
+
+                                                            <Trigger Property="IsFocused" Value="true">
+                                                                <Setter Property="Foreground" Value="#A487B7"/>
+                                                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                                                <Setter Property="BorderBrush" Value="#A487B7"/>
+                                                                <Setter Property="Opacity" Value="100"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+
+
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </DockPanel>
+                                        
+                                    </Border>
+                                    <Border Grid.Row="3">
+                                        <DockPanel HorizontalAlignment="Center">
+
+                                            <Button Cursor="Hand">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="50"/>
+                                                        <Setter Property="Content" Value="Sıvı Sabun"/>
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+
+                                                        <Style.Triggers>
+
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Background" Value="{x:Null}"/>
+                                                            </Trigger>
+
+                                                            <Trigger Property="IsFocused" Value="true">
+                                                                <Setter Property="Foreground" Value="#A487B7"/>
+                                                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                                                <Setter Property="BorderBrush" Value="#A487B7"/>
+                                                                <Setter Property="Opacity" Value="100"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+
+
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+
+                                            <Label Width="50"/>
+                                            <Button Cursor="Hand" Click="Button_Click">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="50"/>
+                                                        <Setter Property="Content" Value="Katı Sabun"/>
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+
+                                                        <Style.Triggers>
+
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Background" Value="{x:Null}"/>
+                                                            </Trigger>
+
+                                                            <Trigger Property="IsFocused" Value="true">
+                                                                <Setter Property="Foreground" Value="#A487B7"/>
+                                                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                                                <Setter Property="BorderBrush" Value="#A487B7"/>
+                                                                <Setter Property="Opacity" Value="100"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+
+
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </DockPanel>
+
+                                    </Border>
+
+                                    <Border Grid.Row="4">
+                                        <DockPanel HorizontalAlignment="Center">
+
+                                            <Button Cursor="Hand">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="50"/>
+                                                        <Setter Property="Content" Value="Kağıt Mendil"/>
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+
+                                                        <Style.Triggers>
+
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Background" Value="{x:Null}"/>
+                                                            </Trigger>
+
+                                                            <Trigger Property="IsFocused" Value="true">
+                                                                <Setter Property="Foreground" Value="#A487B7"/>
+                                                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                                                <Setter Property="BorderBrush" Value="#A487B7"/>
+                                                                <Setter Property="Opacity" Value="100"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+
+
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+
+                                            <Label Width="50"/>
+                                            <Button Cursor="Hand">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="150"/>
+                                                        <Setter Property="Height" Value="50"/>
+                                                        <Setter Property="Content" Value="Kağıt Sabun"/>
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+
+                                                        <Style.Triggers>
+
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Background" Value="{x:Null}"/>
+                                                            </Trigger>
+
+                                                            <Trigger Property="IsFocused" Value="true">
+                                                                <Setter Property="Foreground" Value="#A487B7"/>
+                                                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                                                <Setter Property="BorderBrush" Value="#A487B7"/>
+                                                                <Setter Property="Opacity" Value="100"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+
+
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                        </DockPanel>
+
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Border>
             </Border>
             <Border Grid.Row="14" Background="#F7F7F7">
+                <Label Content="SADECE GRATİS'TE" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#D2D2D2" FontSize="60"/>
+            </Border>
+            <Border Grid.Row="15" Background="#F7F7F7">
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -388,14 +631,14 @@
                 
 
             </Border>
-            <Border Grid.Row="15">
+            <Border Grid.Row="16">
                 <DockPanel>
                     <Label Width="100"/>
                     <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\onecikankategoriler.png" HorizontalAlignment="Left" Width="350"/>
                 </DockPanel>
 
             </Border>
-            <Border Grid.Row="16">
+            <Border Grid.Row="17">
                 <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\sacbakım.png" Width="200"/>
                     <Label Width="30"/>
@@ -407,7 +650,7 @@
 
                 </DockPanel>
             </Border>
-            <Border Grid.Row="17" Background="#F5EAFD">
+            <Border Grid.Row="18" Background="#F5EAFD">
                 <DockPanel HorizontalAlignment="Center">
                     <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\magazalarımız.png" Height="50"/>
                     <Label Content="Mağazalarımız" VerticalContentAlignment="Center" Foreground="#490E6F" FontWeight="Bold" FontSize="16"/>
@@ -428,16 +671,18 @@
                     <Label Content="İletişim" VerticalContentAlignment="Center" Foreground="#490E6F" FontWeight="Bold" FontSize="16"/>
                 </DockPanel>
             </Border>
-            <Border Grid.Row="18">
+            <Border Grid.Row="19">
                 <Grid>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="200"/>
                         <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        
                     </Grid.ColumnDefinitions>
-                    <Border Grid.Column="0">
+                    <Border Grid.Column="1">
                         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                             <Label Cursor="Hand">
                                 <Label.Style>
@@ -563,7 +808,7 @@
                         </StackPanel>
                     </Border>
 
-                    <Border Grid.Column="1">
+                    <Border Grid.Column="2">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -673,7 +918,7 @@
                         </Grid>
                     </Border>
 
-                    <Border Grid.Column="2">
+                    <Border Grid.Column="3">
                         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
                             <Label Height="40"/>
                             <Label Content="Gratis" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
@@ -726,7 +971,7 @@
                         </StackPanel>
                     </Border>
 
-                    <Border Grid.Column="3">
+                    <Border Grid.Column="4">
                         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
                             <Label Height="40"/>
                             <Label Content="Yardım ve Destek" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
@@ -790,12 +1035,137 @@
                                     </Style>
                                 </Label.Style>
                             </Label>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\tellno.png" Width="150"/>
                         </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="170"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Row="0">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="200"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Column="1">
+                                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                                            <Label Height="40"/>
+                                            <Label Content="Uygulamamızı Takip Edin" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\apple.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="App Store"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\googleplay.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Google Play"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Grid.Column="0">
+                                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                                            <Label Height="40"/>
+                                            <Label Content="Bizi Takip Edin" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\facebook.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Facebook"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\instagram.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Instagram"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\twitter.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Twitter"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Row="1">
+                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\gratise.png" Margin="-66,0,1,0"/>
+                            </Border>
+                        </Grid>
                     </Border>
                 </Grid>
             </Border>
 
-            <Border Grid.Row="19" Background="#490E6F">
+            <Border Grid.Row="20" Background="#490E6F">
 
                 <DockPanel HorizontalAlignment="Left">
                     <Label Width="150"/>
