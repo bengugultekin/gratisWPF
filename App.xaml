@@ -27,23 +27,8 @@
 
         <!--Menu Butonlar-->
         <Style x:Key="menubutonlar" TargetType="Button">
-            <Setter Property="Foreground" Value="#FF787878"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Label">
-                        <Label Name="label">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Label>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsFocused" Value="True">
-                                <Setter TargetName="label" Property="Foreground" Value="#490E6F"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-
+            
+            
 
             <Setter Property="Template">
                 <Setter.Value>

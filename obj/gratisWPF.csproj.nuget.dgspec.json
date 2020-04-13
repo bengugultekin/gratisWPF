@@ -40,16 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Json.Net": {
-              "target": "Package",
-              "version": "[1.0.18, )"
-            },
-            "Microsoft.Net.Http": {
-              "target": "Package",
-              "version": "[2.2.29, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

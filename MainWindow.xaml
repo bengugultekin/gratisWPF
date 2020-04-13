@@ -200,6 +200,42 @@
 
                 </DockPanel>
             </Border>
+
+            <Border Grid.Row="3" Background="#363749" Opacity="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="10"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0">
+                                <StackPanel HorizontalAlignment="Right">
+                                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\eye-shadow (1).png" Height="20"/>
+                                    <Label Height="50"/>
+                                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\eye-shadow (1).png" Height="20"/>
+                                    <Label Height="50"/>
+                                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\eye-shadow (1).png" Height="20"/>
+                                </StackPanel>
+                                
+                            </Border>
+                            <Border Grid.Column="2">
+                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\menucubuk.png" Height="200"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+            
             <Border Grid.Row="3">
                 <StackPanel>
                     <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\6.png" Height="120" Margin="-970,-120,60,0" Width="158" Cursor="Hand"/>
@@ -247,6 +283,35 @@
 
             <Border Grid.Row="6" VerticalAlignment="Bottom">
                 <DockPanel HorizontalAlignment="Center">
+                    <Button Width="90" Cursor="Hand">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Content" Value="Tümü"/>
+                                <Setter Property="FontSize" Value="18"/>
+                                <Setter Property="FontFamily" Value="Rubik"/>
+                                <Setter Property="Background" Value="White"/>
+                                
+                                
+                                <Style.Triggers>
+                                    <Trigger Property="IsFocused" Value="True">
+                                        <Setter Property="Foreground" Value="#490E6F"/>
+                                        <Setter Property="BorderThickness" Value="0,0,0,3"/>
+                                        <Setter Property="BorderBrush" Value="#490E6F"/>
+                                        <Setter Property="Background" Value="White"/>
+                                    </Trigger>
+                                    <Trigger Property="IsFocused" Value="False">
+                                        <Setter Property="Foreground" Value="#FF363636"/>
+                                        <Setter Property="BorderBrush" Value="#FFA2A2A2"/>
+                                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Foreground" Value="#FF363636"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        
+                    </Button>
                     <Button Style="{DynamicResource menubutonlar}" Width="90">
                         <Label Cursor="Hand">
                             <Label.Style>
@@ -254,10 +319,13 @@
                                     <Setter Property="Content" Value="Tümü"/>
                                     <Setter Property="FontSize" Value="18"/>
                                     <Setter Property="FontFamily" Value="Sitka Text"/>
-                                    <Setter Property="Foreground" Value="#FF363636"/>
+                                    
                                     <Style.Triggers>
                                         <Trigger Property="IsFocused" Value="True">
                                             <Setter Property="Foreground" Value="#490E6F"/>
+                                        </Trigger>
+                                        <Trigger Property="IsFocused" Value="False">
+                                            <Setter Property="Foreground" Value="#FF363636"/>
                                         </Trigger>
                                     </Style.Triggers>
                                 </Style>
@@ -265,28 +333,28 @@
                         </Label>
                         <!-- <Label Content="Tümü" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636" Cursor="Hand"/>-->
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="90">
+                    <Button Style="{DynamicResource menubutonlar}" Width="90" Cursor="Hand">
                         <Label Content="Makyaj" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="120">
+                    <Button Style="{DynamicResource menubutonlar}" Width="120" Cursor="Hand">
                         <Label Content="Cilt Bakım" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="120">
+                    <Button Style="{DynamicResource menubutonlar}" Width="120" Cursor="Hand">
                         <Label Content="Saç Bakım" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="120">
+                    <Button Style="{DynamicResource menubutonlar}" Width="120" Cursor="Hand">
                         <Label Content="Erkek Bakım" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="180">
+                    <Button Style="{DynamicResource menubutonlar}" Width="180" Cursor="Hand">
                         <Label Content="Parfüm Deodorant" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="140">
+                    <Button Style="{DynamicResource menubutonlar}" Width="140" Cursor="Hand">
                         <Label Content="Sağlık Hijyen" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="120">
+                    <Button Style="{DynamicResource menubutonlar}" Width="120" Cursor="Hand">
                         <Label Content="Anne Bebek" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
-                    <Button Style="{DynamicResource menubutonlar}" Width="120">
+                    <Button Style="{DynamicResource menubutonlar}" Width="120" Cursor="Hand">
                         <Label Content="Ev Yaşam" FontSize="18" HorizontalContentAlignment="Center" FontFamily="Sitka Text" Foreground="#FF363636"/>
                     </Button>
                 </DockPanel>

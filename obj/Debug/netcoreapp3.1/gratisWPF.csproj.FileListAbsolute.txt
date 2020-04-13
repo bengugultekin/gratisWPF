@@ -16,3 +16,4 @@ C:\Users\Bengu\source\repos\gratisWPF\obj\Debug\netcoreapp3.1\gratisWPF.Assembly
 C:\Users\Bengu\source\repos\gratisWPF\obj\Debug\netcoreapp3.1\gratisWPF.AssemblyInfo.cs
 C:\Users\Bengu\source\repos\gratisWPF\obj\Debug\netcoreapp3.1\gratisWPF.dll
 C:\Users\Bengu\source\repos\gratisWPF\obj\Debug\netcoreapp3.1\gratisWPF.pdb
+C:\Users\Bengu\source\repos\gratisWPF\obj\Debug\netcoreapp3.1\girisyap.g.cs
