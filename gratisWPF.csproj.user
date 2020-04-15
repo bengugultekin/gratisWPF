@@ -10,12 +10,24 @@
     <Compile Update="girisyap.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Hakkimizda.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Maskara.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="girisyap.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Hakkimizda.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Maskara.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

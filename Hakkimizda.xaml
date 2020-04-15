@@ -1,0 +1,845 @@
+﻿<Window x:Class="gratisWPF.Hakkimizda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gratisWPF"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Width="1300"
+        Title="Hakkimizda">
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="40"/>
+                
+                
+                <RowDefinition Height="800"/>
+                
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="150"/>
+                
+                
+                
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="1">
+                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\6.png" Margin="-920,-20,0,0" Height="120" Width="150"/>
+            </Border>
+
+            <Border Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Row="1" Grid.Column="0">
+                        <DockPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                            <Label Width="240"/>
+
+                            <Label Content="Markalar" FontSize="16" Foreground="#490E6F" FontWeight="Bold" FontFamily="Corbel" Height="80" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand"/>
+                            <Label Content="Kampanyalar" FontSize="16" Foreground="#490E6F" FontWeight="Bold" FontFamily="Corbel" Height="80" Width="105" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand"/>
+                        </DockPanel>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="1">
+                        <DockPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\favoriurun.png" Width="30"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\cubuk.png" Width="10" Height="40"/>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\sepet.png" Width="30"/>
+                            <Label Width="100"/>
+                        </DockPanel>
+
+                    </Border>
+
+                </Grid>
+
+
+            </Border>
+
+
+            <Border Grid.Row="0" BorderBrush="#FFB9B7B7" BorderThickness="1,1,1,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Row="0" Grid.Column="0">
+                        <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\1.png" HorizontalAlignment="Left" Height="25"/>
+                            <Label Content="85 TL üzeri alışverişlerinizde KARGO BEDAVA!" FontSize="12" Background="White" Foreground="#FFEA67C6" FontWeight="Bold" FontFamily="Calibri"/>
+                        </DockPanel>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <DockPanel>
+                            <Image Height="32" Width="120" Cursor="Hand">
+                                <Image.Style>
+                                    <Style TargetType="Image">
+                                        <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton1.png"/>
+                                        <Setter Property="Height" Value="32"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton1_1.png"/>
+                                                <Setter Property="Height" Value="32"/>
+                                                <Setter Property="Width" Value="130"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                            <Image Height="30" Width="120" Cursor="Hand">
+                                <Image.Style>
+                                    <Style TargetType="Image">
+                                        <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton2.png"/>
+                                        <Setter Property="Height" Value="32"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton2_2.png"/>
+                                                <Setter Property="Height" Value="45"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                            <Image Height="35" Width="140" Cursor="Hand">
+                                <Image.Style>
+                                    <Style TargetType="Image">
+                                        <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton3.png"/>
+                                        <Setter Property="Height" Value="32"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton3_3.png"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                            <Image Height="35" Width="150" Cursor="Hand">
+                                <Image.Style>
+                                    <Style TargetType="Image">
+                                        <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton4.png"/>
+                                        <Setter Property="Height" Value="32"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Source" Value="C:\Users\Bengu\source\repos\gratisWPF\images\icon\ustbuton4_4.png"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                        </DockPanel>
+                    </Border>
+
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2" Background="#490E6F">
+                <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                    <DockPanel Margin="0,0,-150,0">
+
+                        <Border BorderThickness="0,0,0,0">
+                            <Border.Style>
+                                <Style TargetType="Border">
+
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <Label Content="Makyaj" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="80" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Cilt Bakım" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="80" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Saç Bakım" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="90" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Sağlık Hijyen" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="90" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Parfüm Deodorant" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="130" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Erkek Bakım" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="90" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Ev Yaşam" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="80" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Anne Bebek" FontSize="15" FontWeight="Bold" FontFamily="Calibri" Foreground="White" Cursor="Hand" Width="90" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="OUTLET" FontSize="15" Foreground="#E0119D" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand" Width="80" HorizontalContentAlignment="Center"/>
+                        </Border>
+                        <Label Content="|" FontSize="16" FontFamily="Calibri" Foreground="#E0119D" HorizontalContentAlignment="Center"/>
+                        <Border BorderThickness="0,0,0,0">
+                            <Label Content="Trendler" FontSize="15" Foreground="#E0119D" FontWeight="Bold" FontFamily="Calibri" Cursor="Hand" Width="80" HorizontalContentAlignment="Center"/>
+                        </Border>
+                    </DockPanel>
+
+
+                </DockPanel>
+            </Border>
+
+            <Border Grid.Row="3">
+                <StackPanel>
+                    <Label Height="30"/>
+                    <DockPanel HorizontalAlignment="Left" Margin="0,0,0,0">
+                        <Label Width="90"/>
+                        <Button Content="Anasayfa" Width="70" Background="White" Foreground="Gray" FontFamily="Rubik" BorderThickness="0,0,0,0" Click="Anasayfa" Cursor="Hand"/>
+                        <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\ok.png" Height="8"/>
+                        <Button Content="Hakkımızda" Width="70" Background="White" Foreground="#FF474545" FontFamily="Rubik" BorderThickness="0,0,0,0" Cursor="Hand"/>
+                    </DockPanel>
+
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\hakkimizda.jpg" Width="1100" Margin="0,0,0,0"/>
+                    <Label Height="20"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\icon\gratishakkinda.png" Width="600" HorizontalAlignment="Left"/>
+                    <Label Height="20"/>
+                    <DockPanel>
+                        <Label Width="40"/>
+                        <Label Content="Gratis, 2009 yılından bu yana her yıl büyüyerek 79 ilde, 600'ün üzerinde mağazasıyla kozmetik, cilt bakım, saç bakım ve kişisel bakım alanında 30.000'i aşkın ürünü tüketici" FontFamily="rubik" FontSize="16"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Width="40"/>
+                        <Label Content="ile buluşturan, Türkiye'nin 1 numaralı kişisel bakım marketidir." FontFamily="rubik" FontSize="16"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Width="40"/>
+                        <Label Content="İlk mağazasını 17 Temmuz 2009'da Metrocity Avm'de açan Gratis; yenilikçi ve dinamik duruşuyla, ileri teknolojik alt yapısıyla, uzmanlaşmış mağazacılık anlayışıyla, hesaplı" FontFamily="rubik" FontSize="16"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Width="40"/>
+                        <Label Content="ürün ve marka çeşitliliği ile Türkiye'de doğan, büyüyen ve tüketicilerin tercih ettiği perakende markalarından biridir." FontFamily="rubik" FontSize="16"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Width="40"/>
+                        <Label Content="Güzel Bak Kendine mottosu ile Gratis'in amacı; müşterilerine kolay ulaşılabilir, hızlı ve rahat alışveriş imkanı sunmak, temel kişisel bakım ihtiyaçlarının yanı sıra heyecan" FontFamily="rubik" FontSize="16"/>
+                    </DockPanel>
+                    <DockPanel>
+                        <Label Width="40"/>
+                        <Label Content="veren yeni markalar ve ürünler ile müşterilerinin mutluluğuna katkı sağlayarak, kişiye özel alışveriş deneyimi sunan bir perakende zinciri haline gelmektir." FontFamily="rubik" FontSize="16"/>
+                    </DockPanel>
+                    
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="4" Background="#F5EAFD">
+                <DockPanel HorizontalAlignment="Center">
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\magazalarımız.png" Height="50"/>
+                    <Label Content="Mağazalarımız" VerticalContentAlignment="Center" Foreground="#490E6F" FontWeight="Bold" FontSize="16"/>
+                    <Label Width="50"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\aracubuk.png" Height="50"/>
+                    <Label Width="50"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\kolayiade.png" Height="50"/>
+                    <Label Content="Kolay İade" VerticalContentAlignment="Center" Foreground="#490E6F" FontWeight="Bold"  FontSize="16"/>
+                    <Label Width="50"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\aracubuk.png" Height="50"/>
+                    <Label Width="50"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\yardımvedestek.png" Height="50"/>
+                    <Label Content="Yardım Ve Destek" VerticalContentAlignment="Center" Foreground="#490E6F" FontWeight="Bold" FontSize="16"/>
+                    <Label Width="50"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\aracubuk.png" Height="50"/>
+                    <Label Width="50"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\iletisim.png" Height="50"/>
+                    <Label Content="İletişim" VerticalContentAlignment="Center" Foreground="#490E6F" FontWeight="Bold" FontSize="16"/>
+                </DockPanel>
+            </Border>
+            <Border Grid.Row="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Makyaj"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Cilt Bakım"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Saç Bakım"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Sağlık Hijyen"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Parfüm Deodorant"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Erkek Bakım"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Ev Yaşam"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Anne Bebek"/>
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Row="0">
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <Label Cursor="Hand">
+                                        <Label.Style>
+                                            <Style TargetType="Label">
+                                                <Setter Property="Content" Value="Kampanyalar"/>
+                                                <Setter Property="FontWeight" Value="Bold"/>
+                                                <Setter Property="FontSize" Value="16"/>
+                                                <Setter Property="FontFamily" Value="Rubik"/>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Foreground" Value="#490E6F"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Label.Style>
+                                    </Label>
+                                    <Label Cursor="Hand">
+                                        <Label.Style>
+                                            <Style TargetType="Label">
+                                                <Setter Property="Content" Value="Markalar"/>
+                                                <Setter Property="FontWeight" Value="Bold"/>
+                                                <Setter Property="FontSize" Value="16"/>
+                                                <Setter Property="FontFamily" Value="Rubik"/>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Foreground" Value="#490E6F"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Label.Style>
+                                    </Label>
+
+                                </StackPanel>
+                            </Border>
+
+                            <Border Grid.Row="1">
+                                <StackPanel>
+                                    <Border>
+                                        <DockPanel>
+                                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\magaza.png" Height="30" Width="30" Cursor="Hand"/>
+                                            <Label Cursor="Hand">
+                                                <Label.Style>
+                                                    <Style TargetType="Label">
+                                                        <Setter Property="Content" Value="Mağazalarımız"/>
+                                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                        <Setter Property="FontSize" Value="16"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Label.Style>
+                                            </Label>
+                                        </DockPanel>
+                                    </Border>
+                                    <Border>
+                                        <DockPanel>
+                                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\gratiskart.png" Height="30" Width="30" Cursor="Hand"/>
+                                            <Label Cursor="Hand">
+                                                <Label.Style>
+                                                    <Style TargetType="Label">
+                                                        <Setter Property="Content" Value="Gratis Kart"/>
+                                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                        <Setter Property="FontSize" Value="16"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Label.Style>
+                                            </Label>
+                                        </DockPanel>
+                                    </Border>
+                                    <Border>
+                                        <DockPanel>
+                                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\katolog.png" Height="30" Width="30" Cursor="Hand"/>
+                                            <Label Cursor="Hand">
+                                                <Label.Style>
+                                                    <Style TargetType="Label">
+                                                        <Setter Property="Content" Value="Katolog"/>
+                                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                        <Setter Property="FontSize" Value="16"/>
+                                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="true">
+                                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Label.Style>
+                                            </Label>
+                                        </DockPanel>
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Column="3">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <Label Height="40"/>
+                            <Label Content="Gratis" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
+                            <Button Cursor="Hand">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Content" Value="Hakkımızda"/>
+                                        <Setter Property="Background" Value="White"/>
+                                        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="İletişim"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Kariyer"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="4">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <Label Height="40"/>
+                            <Label Content="Yardım ve Destek" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Sipariş Süreci"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Kolay İade"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Üyelik"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Label Cursor="Hand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Content" Value="Tümü"/>
+                                        <Setter Property="Foreground" Value="#5C5C8B"/>
+                                        <Setter Property="FontSize" Value="16"/>
+                                        <Setter Property="FontFamily" Value="Rubik"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="Foreground" Value="#490E6F"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\tellno.png" Width="150"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Column="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="170"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Row="0">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="200"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Column="1">
+                                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                                            <Label Height="40"/>
+                                            <Label Content="Uygulamamızı Takip Edin" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\apple.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="App Store"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\googleplay.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Google Play"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Grid.Column="0">
+                                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                                            <Label Height="40"/>
+                                            <Label Content="Bizi Takip Edin" FontSize="16" FontWeight="Bold" FontFamily="Rubik"/>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\facebook.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Facebook"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\instagram.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Instagram"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                            <DockPanel>
+                                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\twitter.png" Width="30" Height="30" Cursor="Hand"/>
+                                                <Label Cursor="Hand">
+                                                    <Label.Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="Content" Value="Twitter"/>
+                                                            <Setter Property="Foreground" Value="#5C5C8B"/>
+                                                            <Setter Property="FontSize" Value="16"/>
+                                                            <Setter Property="FontFamily" Value="Rubik"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="true">
+                                                                    <Setter Property="Foreground" Value="#490E6F"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Label.Style>
+                                                </Label>
+                                            </DockPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Row="1">
+                                <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\gratise.png" Margin="-66,0,1,0"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="6" Background="#490E6F">
+
+                <DockPanel HorizontalAlignment="Left">
+                    <Label Width="150"/>
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\6.png" Width="100"/>
+                    <Label Width="10"/>
+                    <Label Content="Copyright © 2020, Gratis A.Ş." VerticalContentAlignment="Center" Foreground="#A487B7" FontSize="14"/>
+                    <Label Width="200"/>
+                    <Label Cursor="Hand" VerticalContentAlignment="Center">
+                        <Label.Style>
+                            <Style TargetType="Label">
+                                <Setter Property="Content" Value="Gizlilik ve Güvenlik"/>
+                                <Setter Property="Foreground" Value="#5C5C8B"/>
+                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="Foreground" Value="#A487B7"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Label.Style>
+                    </Label>
+
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\altmenucubuk.png" Height="20"/>
+                    <Label Cursor="Hand" VerticalContentAlignment="Center">
+                        <Label.Style>
+                            <Style TargetType="Label">
+                                <Setter Property="Content" Value="Kullanım Koşulları"/>
+                                <Setter Property="Foreground" Value="#5C5C8B"/>
+                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="Foreground" Value="#A487B7"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Label.Style>
+                    </Label>
+
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\altmenucubuk.png" Height="20"/>
+                    <Label Cursor="Hand" VerticalContentAlignment="Center">
+                        <Label.Style>
+                            <Style TargetType="Label">
+                                <Setter Property="Content" Value="Bilgi Toplumu Hizmetleri"/>
+                                <Setter Property="Foreground" Value="#5C5C8B"/>
+                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="Foreground" Value="#A487B7"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Label.Style>
+                    </Label>
+
+                    <Image Source="C:\Users\Bengu\source\repos\gratisWPF\images\icon\altmenucubuk.png" Height="20"/>
+                    <Label Cursor="Hand" VerticalContentAlignment="Center">
+                        <Label.Style>
+                            <Style TargetType="Label">
+                                <Setter Property="Content" Value="Yasal Uyarı KVKK Aydınlatma Metni"/>
+                                <Setter Property="Foreground" Value="#5C5C8B"/>
+                                <Setter Property="FontSize" Value="16"/>
+                                <Setter Property="Foreground" Value="#A487B7"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Label.Style>
+                    </Label>
+
+                </DockPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+    
+</Window>
